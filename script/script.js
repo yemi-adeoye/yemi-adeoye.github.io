@@ -25,7 +25,7 @@ document.addEventListener('click', e => {
     const projectsHtml = getPages('pages/project.html');
 
     projectsHtml.then(data => {
-            console.log(object)
+            console.log(data)
         }
 
     )
