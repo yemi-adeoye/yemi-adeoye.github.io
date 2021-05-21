@@ -2,13 +2,67 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yemi's Bio</title>
+    <title>Document</title>
+    <!--Link to bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--Link to custom css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Link to bootstap js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Lexend+Deca&family=Martel:wght@200&family=Raleway&display=swap" rel="stylesheet">
+    <!--Add fontawesome-->
+    <script src="https://kit.fontawesome.com/c91edd0e64.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Yemi's Portfolio</h1>
-    <img src="yemi.jpg" alt="a picture of yemi">
+    <div class="container-fluid-xs">
+        <nav class="navbar navbar-custom navbar-expand-md">
+            <!-- Brand -->
+            <img src="images/profile-pic.jpeg" alt="" id="bio-pic" srcset="" class='img rounded-circle bio-pic img-fluid'>
+            <a class="navbar-brand title" id="brand" href="#">Yemi's Portfolio</a>
+
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"><i class="fa fa-navicon" id="toggler" style="color:#000; font-size:28px;"></i></span>
+        </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item selected">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-projects" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FULL BIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEEDBACK</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row d-block p-5 landing-main">
+            <hr><br>
+            <h1 class="main">Welcome to Yemi's Portfolio</h1>
+            <p class="col-md-7 p-0 landing-text">Yemi is a Nigerian fullstack developer. He is familiar with Javascript HTML5, CSS, Python and PHP. He loves to use React for front end development and Django for backend development. He has a Bachelor’s in Mechanical Engineering. He lives
+                in Fargo, North Dakota and believes cats are cuter than dogs</p>
+            <button id="two-min-video" class="btn btn-primary custom-buttons">2 MIN VIDEO</button>
+            <button id="full-bio" class="btn btn-primary custom-buttons">FULL BIO</button>
+
+        </div>
+
+    </div>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

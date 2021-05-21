@@ -1,0 +1,96 @@
+header {
+    width: 100%;
+    height: 107px;
+}
+
+.navbar-custom {
+    background: #F4FCFF;
+    width: 100%;
+    border-bottom: 1px solid #4E4739;
+}
+
+.navbar-custom a {
+    color: #000;
+    font-family: 'Raleway';
+    /*font-family: 'Lexend Deca';*/
+}
+
+.bio-pic {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #4E4739;
+    position: absolute;
+    margin-top: 62px;
+}
+
+.title {
+    display: block;
+    margin-left: 80px;
+}
+
+.custom-toggler {
+    color: #4E4739;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+hr {
+    width: 200px;
+    display: block;
+    border-top: 20px solid #4E4739;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+.main {
+    display: block;
+}
+
+.landing-main {
+    background-color: #A5D0E0;
+    border-bottom: 1px solid #4E4739;
+    min-height: 570px;
+}
+
+.landing-main:before {
+    content: '';
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 55px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-text {
+    font-size: 1.3em;
+    line-height: 40px;
+    font-family: 'Arsenal';
+}
+
+.main {
+    font-family: 'Roboto';
+    font-size: 2.8em;
+}
+
+.custom-buttons {
+    background-color: #4E4739;
+    border: 1px solid #707070;
+    box-shadow: none;
+    width: 135px;
+    font-family: 'Raleway';
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #707070;
+    color: #fff;
+}
