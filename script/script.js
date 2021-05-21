@@ -22,7 +22,7 @@ document.addEventListener('click', e => {
 
     e.preventDefault();
 
-    const projectsHtml = getPages('pages/project.html');
+    const projectsHtml = getPages('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/projects.html');
 
     projectsHtml.then(data => {
             console.log(data)
