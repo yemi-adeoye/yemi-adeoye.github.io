@@ -49,5 +49,4 @@ eventHandler('click', '#toggler', hidePicOnNavButtonClick);
 
 document.onload(
     eventHandler('click', '#nav-projects', () => { loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/projects.html', 'body') })
-
 )
