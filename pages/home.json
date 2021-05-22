@@ -1,0 +1,3 @@
+{
+    "data": "<div class='row d-block p-5 landing-main> <hr> <br><h1 class = 'main' > Welcome to Yemi 's Portfolio</h1> <p class = 'col-md-7 p-0 landing-text>Yemi is a Nigerian fullstack developer.He is familiar with Javascript HTML5, CSS, Python and PHP. He loves to use React for front end development and Django for backend development.He has a Bachelor’ s in Mechanical Engineering.He lives in Fargo, North Dakota and believes cats are cuter than dogs </p><button id = 'two-min-video' class = 'btn btn-primary custom-buttons' > 2 MIN VIDEO </button> <button id = 'full-bio' class = 'btn btn-primary custom-buttons' > FULL BIO < /button></div>"
+}
