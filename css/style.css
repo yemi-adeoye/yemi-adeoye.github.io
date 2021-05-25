@@ -55,6 +55,11 @@ hr {
     min-height: 570px;
 }
 
+#body {
+    background-color: #A5D0E0;
+    border-bottom: 1px solid #4E4739;
+}
+
 .landing-main:before {
     content: '';
     background-image: url("../images/background.jpg");
@@ -94,3 +99,62 @@ nav a:hover {
     background-color: #707070;
     color: #fff;
 }
+
+
+/* styling of the projects page*/
+
+.project-image {
+    width: 100%;
+    border: 2px solid #707070;
+    display: block;
+}
+
+.project-header {
+    font-family: 'Raleway';
+    font-size: 1.4em;
+}
+
+.project-desc {
+    font-family: 'Roboto';
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2.0em;
+}
+
+@media screen and (max-width: 650px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 150px;
+    }
+}
+
+.project-container {
+    margin-top: -80px;
+}
+
+
+/*.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}*/
