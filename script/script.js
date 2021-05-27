@@ -45,7 +45,7 @@ const navProjects = document.getElementById('nav-projects');
 
 // when the projects link is clicked
 eventHandler('click', '#nav-projects', () => { loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/projects.json', 'body') })
-    // eventHandler('click', '#home', () => { loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/home.json', 'body') })
+eventHandler('click', '#home', () => { loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/home.json', 'body') })
 eventHandler('click', '#toggler', hidePicOnNavButtonClick);
 
 window.onload = () => {
