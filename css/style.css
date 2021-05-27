@@ -1,167 +1,185 @@
-header {
-    width: 100%;
-    height: 107px;
-}
-
-.navbar-custom {
-    background: #F4FCFF;
-    width: 100%;
-    border-bottom: 1px solid #4E4739;
-}
-
-.navbar-custom a {
-    color: #000;
-    font-family: 'Raleway';
-    /*font-family: 'Lexend Deca';*/
-}
-
-.bio-pic {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #4E4739;
-    position: absolute;
-    margin-top: 62px;
-}
-
-.title {
-    display: block;
-    margin-left: 80px;
-}
-
-.custom-toggler {
-    color: #4E4739;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-hr {
-    width: 200px;
-    display: block;
-    border-top: 20px solid #4E4739;
-    margin-left: 0;
-    margin-top: 40px;
-    margin-bottom: -5px;
-}
-
-.main {
-    display: block;
-}
-
-.landing-main {
-    background-color: transparent;
-    border-bottom: 1px solid #4E4739;
-    min-height: 570px;
-    z-index: 0;
-    opacity: 0.9;
-}
-
-#body {
-    background-color: #A5D0E0;
-    border-bottom: 1px solid #4E4739;
-}
-
-.landing-main:before {
-    content: '';
-    background-image: url("../images/background.jpg");
-    background-size: 100%;
-    background-position: center;
-    position: absolute;
-    top: 55px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.2;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: -1;
-}
-
-.landing-text {
-    font-size: 1.3em;
-    line-height: 40px;
-    font-family: 'Arsenal';
-}
-
-.main {
-    font-family: 'Roboto';
-    font-size: 2.8em;
-}
-
-.custom-buttons {
-    margin-right: 20px;
-    box-shadow: none;
-    width: 135px;
-    font-family: 'Raleway';
-    border-radius: 3px;
-    z-index: 1;
-}
-
-nav a:hover {
-    background-color: #707070;
-    color: #fff;
-}
-
-
-/* styling of the projects page*/
-
-.project-image {
-    width: 100%;
-    align-self: top;
-    display: block;
-}
-
-.project-header {
-    font-family: 'Raleway';
-    font-size: 1.4em;
-}
-
-.project-desc {
-    font-family: 'Roboto';
-    width: 100%;
-    font-size: 1.2em;
-    line-height: 2.0em;
-}
-
-@media screen and (max-width: 650px) {
-    .project-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(1, 1fr);
+    header {
+        width: 100%;
+        height: 107px;
     }
-}
-
-@media screen and (min-width: 651px) and (max-width: 1000px) {
-    .project-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-gap: 50px;
+    
+    .navbar-custom {
+        background: #F4FCFF;
+        width: 100%;
+        border-bottom: 1px solid #4E4739;
     }
-}
-
-@media screen and (min-width: 1000px) {
-    .project-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-gap: 150px;
+    
+    .navbar-custom a {
+        color: #000;
+        font-family: 'Raleway';
+        /*font-family: 'Lexend Deca';*/
     }
-}
-
-.project-container {
-    margin-top: -80px;
-}
-
-.custom-icon {
-    font-size: 1.8em;
-}
-
-
-/*.project-container {
+    
+    .bio-pic {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #4E4739;
+        position: absolute;
+        margin-top: 62px;
+    }
+    
+    .title {
+        display: block;
+        margin-left: 80px;
+    }
+    
+    .custom-toggler {
+        color: #4E4739;
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+    
+    hr {
+        width: 200px;
+        display: block;
+        border-top: 20px solid #4E4739;
+        margin-left: 0;
+        margin-top: 40px;
+        margin-bottom: -5px;
+    }
+    
+    .main {
+        display: block;
+    }
+    
+    .landing-main {
+        background-color: transparent;
+        border-bottom: 1px solid #4E4739;
+        min-height: 570px;
+        z-index: 0;
+        opacity: 0.9;
+    }
+    
+    #body {
+        background-color: #A5D0E0;
+        border-bottom: 1px solid #4E4739;
+    }
+    
+    .landing-main:before {
+        content: '';
+        background-image: url("../images/background.jpg");
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        top: 55px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+    }
+    
+    .landing-text {
+        font-size: 1.3em;
+        line-height: 40px;
+        font-family: 'Arsenal';
+    }
+    
+    .main {
+        font-family: 'Roboto';
+        font-size: 2.8em;
+    }
+    
+    .custom-buttons {
+        margin-right: 20px;
+        box-shadow: none;
+        background-color: #4E4739;
+        width: 135px;
+        font-family: 'Raleway';
+        border-radius: 3px;
+        z-index: 1;
+    }
+    
+    nav a:hover {
+        background-color: #707070;
+        color: #fff;
+    }
+    
+    .fa {
+        width: 100%;
+    }
+    
+    #link-linked:hover {
+        background-color: #0E76A8;
+    }
+    
+    #link-git:hover {
+        background-color: #f34f29;
+    }
+    
+    #link-twitter:hover {
+        background-color: #1DA1F2;
+    }
+    /* styling of the projects page*/
+    
+    .project-image {
+        width: 100%;
+        align-self: top;
+        display: block;
+    }
+    
+    .project-header {
+        font-family: 'Raleway';
+        font-size: 1.4em;
+    }
+    
+    .project-desc {
+        font-family: 'Roboto';
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 2.0em;
+    }
+    
+    @media screen and (max-width: 650px) {
+        .project-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(1, 1fr);
+        }
+    }
+    
+    @media screen and (min-width: 651px) and (max-width: 1000px) {
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 50px;
+        }
+    }
+    
+    @media screen and (min-width: 1000px) {
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 150px;
+        }
+    }
+    
+    .project-container {
+        margin-top: -80px;
+    }
+    
+    .custom-icon {
+        font-size: 1.8em;
+    }
+    /*.project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
 }*/
+    
+    footer {
+        min-height: 40px;
+        text-align: center;
+    }
