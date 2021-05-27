@@ -50,9 +50,11 @@ hr {
 }
 
 .landing-main {
-    background-color: #A5D0E0;
+    background-color: transparent;
     border-bottom: 1px solid #4E4739;
     min-height: 570px;
+    z-index: 0;
+    opacity: 0.9;
 }
 
 #body {
@@ -73,6 +75,7 @@ hr {
     width: 100%;
     margin: 0;
     padding: 0;
+    z-index: -1;
 }
 
 .landing-text {
@@ -87,12 +90,12 @@ hr {
 }
 
 .custom-buttons {
-    background-color: #4E4739;
-    border: 1px solid #707070;
+    margin-right: 20px;
     box-shadow: none;
     width: 135px;
     font-family: 'Raleway';
     border-radius: 3px;
+    z-index: 1;
 }
 
 nav a:hover {
@@ -105,7 +108,7 @@ nav a:hover {
 
 .project-image {
     width: 100%;
-    border: 2px solid #707070;
+    align-self: top;
     display: block;
 }
 
@@ -149,6 +152,10 @@ nav a:hover {
 
 .project-container {
     margin-top: -80px;
+}
+
+.custom-icon {
+    font-size: 1.8em;
 }
 
 

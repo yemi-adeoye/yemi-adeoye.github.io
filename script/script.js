@@ -50,5 +50,5 @@ eventHandler('click', '#toggler', hidePicOnNavButtonClick);
 
 window.onload = () => {
     console.log("loadedex")
-    loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/home.json', 'body');
+        //loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/home.json', 'body');
 }
