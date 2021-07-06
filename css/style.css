@@ -65,6 +65,7 @@
     .landing-main:before {
         content: '';
         background-image: url("../images/background.jpg");
+        background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
         position: absolute;
