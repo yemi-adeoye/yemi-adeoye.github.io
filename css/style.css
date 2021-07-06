@@ -16,11 +16,12 @@
     }
     
     .bio-pic {
+        position: absolute;
         width: 80px;
         height: 80px;
         border: 1px solid #4E4739;
-        position: absolute;
-        margin-top: 62px;
+        top: 20px;
+        z-index: 100;
     }
     
     .title {
@@ -90,7 +91,7 @@
     }
     
     .custom-buttons {
-        margin-right: 20px;
+        margin-right: 15px;
         box-shadow: none;
         background-color: #4E4739;
         width: 135px;
@@ -182,4 +183,12 @@
     footer {
         min-height: 40px;
         text-align: center;
+    }
+    
+    iframe {
+        margin: auto;
+    }
+    
+    .alternate {
+        background-color: #fff;
     }
