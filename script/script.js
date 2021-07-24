@@ -38,7 +38,7 @@ const loadPage = async(url, id) => {
         .then(data => data.json())
         .then((data) => {
             const body = document.getElementById(id);
-            body.innerHTML = getProjectsHtml(data.data)
+            body.innerHTML = data.data;
             console.log(getProjectHtml(data.data[0]));
         })
         .catch(e => {
@@ -81,7 +81,7 @@ const navToggler = document.getElementById('toggler');
 const navProjects = document.getElementById('nav-projects');
 
 // when the projects link is clicked
-eventHandler('click', '#nav-projects', () => { loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/refactor/pages/projects.json', 'body') })
+eventHandler('click', '#nav-projects', () => { loadProjects('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/refactor/pages/projects.json', 'body') })
 eventHandler('click', '#home', () => { loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/home.json', 'body') })
 eventHandler('click', '#toggler', hidePicOnNavButtonClick);
 
