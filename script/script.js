@@ -55,6 +55,7 @@ const loadProjects = async(url, id) => {
         .then((data) => {
             const body = document.getElementById(id);
             console.log('got here')
+            console.log(data)
             body.innerHTML = getProjectsHtml(data.data);
             console.log(getProjectHtml(data.data));
         })
