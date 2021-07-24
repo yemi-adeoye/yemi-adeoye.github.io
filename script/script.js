@@ -11,6 +11,17 @@ const hidePicOnNavButtonClick = () => {
     brand.classList.toggle('title')
 }
 
+const getProjectHtml = (project) => {
+    return `<div class="row">
+    <h2 class="project-header">${project.title}</h2>
+    <a href="${project.href}" class="d-block"><img src="${project.src}" class="img project-image d-block" alt=""/></a>
+    <p class="project-desc">
+    ${project.desc}
+      <a href="${project.href}">here</a> for more.
+    </p>
+  </div>`;
+}
+
 const loadPage = async(url, id) => {
     // read page contents
     const page = await fetch(url)
@@ -18,12 +29,14 @@ const loadPage = async(url, id) => {
         .then((data) => {
             const body = document.getElementById(id);
             body.innerHTML = data.data;
-            console.log(data.data[0]);
+            console.log(getProjectHtml(data.data[0]));
         })
         .catch(e => {
             body.innerHTML = '<div>Awww snap! Something went wrong! Try reloading the page ensuring that you have an internet connection. </div>' + e;
         });
 }
+
+
 
 const eventHandler = (eventType, origin, callback) => {
 
