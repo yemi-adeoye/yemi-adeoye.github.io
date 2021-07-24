@@ -23,6 +23,7 @@ const getProjectHtml = (project) => {
 }
 
 const getProjectsHtml = (projects) => {
+    console.log(projects, typeof(projects))
     let projectsHtml = projects.map((project, count) => {
             console.log(project, count)
             return getProjectHtml(project);
