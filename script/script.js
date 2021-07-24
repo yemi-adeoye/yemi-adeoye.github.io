@@ -48,7 +48,8 @@ const loadPage = async(url, id) => {
 }
 
 const loadProjects = async(url, id) => {
-    // read page contents
+    console.log('loading projects')
+        // read page contents
     const page = await fetch(url)
         .then(data => data.json())
         .then((data) => {
@@ -87,6 +88,6 @@ eventHandler('click', '#home', () => { loadPage('https://raw.githubusercontent.c
 eventHandler('click', '#toggler', hidePicOnNavButtonClick);
 
 window.onload = () => {
-    console.log("loadedex")
+
     loadPage('https://raw.githubusercontent.com/yemi-adeoye/yemi-adeoye.github.io/main/pages/home.json', 'body');
 }
