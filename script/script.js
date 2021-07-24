@@ -38,7 +38,7 @@ const loadPage = async(url, id) => {
         .then(data => data.json())
         .then((data) => {
             const body = document.getElementById(id);
-            body.innerHTML = getProjectsHtml(data.data);
+            body.innerHTML = data.data;
             console.log(getProjectHtml(data.data[0]));
         })
         .catch(e => {
@@ -52,7 +52,7 @@ const loadProjects = async(url, id) => {
         .then(data => data.json())
         .then((data) => {
             const body = document.getElementById(id);
-            body.innerHTML = data.data;
+            body.innerHTML = getProjectsHtml(data.data);
             console.log(getProjectHtml(data.data[0]));
         })
         .catch(e => {
