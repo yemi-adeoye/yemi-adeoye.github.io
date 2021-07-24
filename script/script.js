@@ -22,7 +22,31 @@ const getProjectHtml = (project) => {
   </div>`;
 }
 
+const getProjectsHtml = (projects) => {
+    let projects;
+    for (let i = 0; i < projects.length; i++) {
+        projects += getProjectHtml[i];
+    }
+    return `<div class="row p-5 d-block"><h1 class="main">Some Projects</h1></div>
+<div class="project-container p-5">
+${projects} </div>`;
+}
+
 const loadPage = async(url, id) => {
+    // read page contents
+    const page = await fetch(url)
+        .then(data => data.json())
+        .then((data) => {
+            const body = document.getElementById(id);
+            body.innerHTML = getProjectsHtml(data.data)
+            console.log(getProjectHtml(data.data[0]));
+        })
+        .catch(e => {
+            body.innerHTML = '<div>Awww snap! Something went wrong! Try reloading the page ensuring that you have an internet connection. </div>' + e;
+        });
+}
+
+const loadProjects = async(url, id) => {
     // read page contents
     const page = await fetch(url)
         .then(data => data.json())
