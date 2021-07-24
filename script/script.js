@@ -18,7 +18,7 @@ const loadPage = async(url, id) => {
         .then((data) => {
             const body = document.getElementById(id);
             body.innerHTML = data.data;
-            console.log(data);
+            console.log(data.data[0]);
         })
         .catch(e => {
             body.innerHTML = '<div>Awww snap! Something went wrong! Try reloading the page ensuring that you have an internet connection. </div>' + e;
