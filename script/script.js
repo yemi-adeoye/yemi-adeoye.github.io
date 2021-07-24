@@ -53,7 +53,7 @@ const loadProjects = async(url, id) => {
         .then((data) => {
             const body = document.getElementById(id);
             body.innerHTML = getProjectsHtml(data.data);
-            console.log(getProjectHtml(data.data[0]));
+            console.log(getProjectHtml(data.data));
         })
         .catch(e => {
             body.innerHTML = '<div>Awww snap! Something went wrong! Try reloading the page ensuring that you have an internet connection. </div>' + e;
