@@ -1,5 +1,5 @@
 {
-    "data": {
+    "data": [
         "0": {
             "title": "Todo list Manager",
             "href": "https://yemi-adeoye.github.io/to-do-list/",
@@ -36,5 +36,5 @@
             "img": "images/img-news.png",
             "desc": "Follow Nigerian news based on your Interests. Just give the app your keywords and let it fetch relevant news Click"
         }
-    }
+    ]
 }
