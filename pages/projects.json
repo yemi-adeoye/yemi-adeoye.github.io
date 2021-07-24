@@ -1,36 +1,35 @@
 {
-    "data": [
-        "0": {
+    "data": [{
             "title": "Todo list Manager",
             "href": "https://yemi-adeoye.github.io/to-do-list/",
             "img": "images/img-list.png",
             "desc": "A simple yet elegant todo list manager."
         },
-        "1": {
+        {
             "title": "Form Validation with React",
             "href": "https://yemi-adeoye.github.io/formik-in-action/",
             "img": "images/img-form.png",
             "desc": "Realtime form validation on the client side with react and formik. Click"
         },
-        "2": {
+        {
             "title": "Packmen",
             "href": "https://yemi-adeoye.github.io/packmen/",
             "img": "images/img-packman.png",
             "desc": "Watch how packmen images are generated on the fly. Watch how they bounce off the edges of the browser. Click"
         },
-        "3": {
+        {
             "title": "The Eyes",
             "href": "https://yemi-adeoye.github.io/Eyes/",
             "img": "images/img-eyes.png",
             "desc": "The eyes are watching you! Watch how ‘the eyes’ follow your mouse movement. The eyes stalk you! Click"
         },
-        "4": {
+        {
             "title": "Bus Tracker",
             "href": "https://yemi-adeoye.github.io/BusTracker/",
             "img": "images/img-bus.png",
             "desc": "Courtesy of MBTA’s realtime data and Mapbox watch how the buses from MIT to Harvard move in real time. Click"
         },
-        "5": {
+        {
             "title": "Naija Dailies",
             "href": "https://yemi-adeoye.github.io/news/",
             "img": "images/img-news.png",
