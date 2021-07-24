@@ -29,7 +29,7 @@ const getProjectsHtml = (projects) => {
     }
     return `<div class="row p-5 d-block"><h1 class="main">Some Projects</h1></div>
 <div class="project-container p-5">
-${projects} </div>`;
+${projectsHtml} </div>`;
 }
 
 const loadPage = async(url, id) => {
