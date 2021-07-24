@@ -38,6 +38,16 @@ const eventHandler = (eventType, origin, callback) => {
     })
 }
 
+const getProjectHtml = (project) => {
+    return `<div class="row">
+    <h2 class="project-header">${project.title}</h2>
+    <a href="${project.href}" class="d-block"><img src="${project.src}" class="img project-image d-block" alt=""/></a>
+    <p class="project-desc">
+    ${project.desc}
+      <a href="${project.href}">here</a> for more.
+    </p>
+  </div>`;
+}
 
 /* global code goes here */
 const navToggler = document.getElementById('toggler');
