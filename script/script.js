@@ -23,9 +23,9 @@ const getProjectHtml = (project) => {
 }
 
 const getProjectsHtml = (projects) => {
-    let projects;
+    let projectsHtml;
     for (let i = 0; i < projects.length; i++) {
-        projects += getProjectHtml[i];
+        projectsHtml += getProjectHtml[i];
     }
     return `<div class="row p-5 d-block"><h1 class="main">Some Projects</h1></div>
 <div class="project-container p-5">
