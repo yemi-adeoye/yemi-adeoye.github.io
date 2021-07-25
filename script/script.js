@@ -12,14 +12,15 @@ const hidePicOnNavButtonClick = () => {
 }
 
 const getProjectHtml = (project) => {
-    return `<div class="row">
+    return `<div>${project.title}</div>`
+        /*return `<div class="row">
     <h2 class="project-header">${project.title}</h2>
     <a href="${project.href}" class="d-block"><img src="${project.img}" class="img project-image d-block" alt=""/></a>
     <p class="project-desc">
     ${project.desc}
       <a href="${project.href}">here</a> for more.
     </p>
-  </div>`;
+  </div>`;*/
 }
 
 const getProjectsHtml = (projects) => {
