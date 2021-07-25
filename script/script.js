@@ -23,16 +23,12 @@ const getProjectHtml = (project) => {
 }
 
 const getProjectsHtml = (projects) => {
-    console.log(projects, typeof(projects))
-    let projectsHtml = projects.map((project, count) => {
-            console.log(project, count)
-            return getProjectHtml(project);
-        })
-        /*console.log(projects.length);
-        for (let i = 0; i < projects.length; i++) {
 
-            projectsHtml += getProjectHtml(projects[i]);
-        }*/
+    let projectsHtml = projects.map((project, count) => {
+
+        return getProjectHtml(project);
+    })
+
     return `<div class="row p-5 d-block"><h1 class="main">Some Projects</h1></div><div class="project-container p-5">${projectsHtml} </div>`;
 }
 
@@ -51,16 +47,16 @@ const loadPage = async(url, id) => {
 }
 
 const loadProjects = async(url, id) => {
-    console.log('loading projects')
-        // read page contents
+
+    // read page contents
     const page = await fetch(url)
         .then(data => data.json())
         .then((data) => {
             const body = document.getElementById(id);
-            console.log('got here')
-            console.log(getProjectsHtml(data.data))
+
+
             body.innerHTML = getProjectsHtml(data.data);
-            console.log(getProjectHtml(data.data));
+
         })
         .catch(e => {
             body.innerHTML = '<div>Awww snap! Something went wrong! Try reloading the page ensuring that you have an internet connection. </div>' + e;
