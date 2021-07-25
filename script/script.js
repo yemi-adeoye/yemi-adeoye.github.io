@@ -25,7 +25,7 @@ const getProjectHtml = (project) => {
 const getProjectsHtml = (projects) => {
 
     let projectsHtml = projects.map((project, count) => {
-        console.log(project)
+        console.log(getProjectHtml(project))
         return getProjectHtml(project);
     })
 
