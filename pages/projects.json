@@ -1,7 +1,7 @@
 {
     "data": [{
             "title": "Tic Tac Toe",
-            "href": "https://yemi-adeoye.github.io/tictactoe/",
+            "href": "https://yemi-adeoye.github.io/tic-tac-toe/",
             "img": "images/img-tictactoe.jpg",
             "desc": "A simple tic tac toe game with a history. Click "
         }, {
