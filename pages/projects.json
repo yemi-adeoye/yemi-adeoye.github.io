@@ -1,9 +1,15 @@
 {
     "data": [{
+            "title": "ATM",
+            "href": "https://yemi-adeoye.github.io/atm/",
+            "img": "images/img-atm.png",
+            "desc": "A simulation of the Automated Teller Machine"
+        },
+        {
             "title": "Todo list Manager",
             "href": "https://yemi-adeoye.github.io/to-do-list/",
             "img": "images/img-list.png",
-            "desc": "A simple yet elegant todo list manager."
+            "desc": "A simple yet elegant todo list manager. Click"
         },
         {
             "title": "Form Validation with React",
