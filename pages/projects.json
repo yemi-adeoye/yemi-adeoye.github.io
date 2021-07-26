@@ -2,8 +2,8 @@
     "data": [{
             "title": "ATM",
             "href": "https://yemi-adeoye.github.io/atm/",
-            "img": "images/img-atm.png",
-            "desc": "A simulation of the Automated Teller Machine"
+            "img": "images/img-atm.jpg",
+            "desc": "A simulation of the Automated Teller Machine. Click "
         },
         {
             "title": "Todo list Manager",
